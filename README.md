@@ -16,8 +16,8 @@ It's important to identify when a lot of our features are related or mean nearly
 ## Array Size vs. Total Stalls ##
 ![](sizeVsStalls.png) 
 
-## Array Size vs. Total Stalls For Base Case ##
+## Array Size vs. Total Stalls For All Sizes ##
 ![](cyclestalls.png) 
 
 ## Array Size vs. Total Stalls For Small Arrays ##
-![](cyclestalls.png) 
+![](cyclestalls-small-size.png) 
