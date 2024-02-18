@@ -11,11 +11,11 @@ import org.openjdk.jmh.infra.Blackhole;
 public class SBEEncodeDecode {
 
     public static final int CAPACITY = 512;
-    public static final int ALIGNMENT = 8;
+    public static final int ALIGNMENT = 32;
     SingleSidedQuoteEncoder singleSidedQuoteEncoder = new SingleSidedQuoteEncoder();
     SingleSidedQuoteEncodeHelper singleSidedQuoteEncodeHelper = new SingleSidedQuoteEncodeHelper();
     MessageHeaderEncoder headerEnc = new MessageHeaderEncoder();
-    ByteBuffer directAlignedBuffer = org.agrona.BufferUtil.allocateDirectAligned(512, 8);
+    ByteBuffer directAlignedBuffer = org.agrona.BufferUtil.allocateDirectAligned(CAPACITY, ALIGNMENT);
     MutableDirectBuffer buffer = new org.agrona.concurrent.UnsafeBuffer(directAlignedBuffer);
 
     SingleSidedQuoteDecoder dec = new SingleSidedQuoteDecoder();
