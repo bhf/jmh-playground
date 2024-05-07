@@ -2,6 +2,9 @@
 
 Some JMH benchmarks and analysis of array averaging. I mostly wrote this to refine my JMH process, not to try and find the average of an array in the fastest way. 
 
+Commands:
+mvn clean verify
+java -jar target/benchmarks. jar
 
 ## How much value do we really get from all these features? ##
 ![](massScatter.png) 
